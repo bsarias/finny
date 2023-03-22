@@ -2,10 +2,11 @@ import org.gradle.api.JavaVersion
 
 object Versions {
     const val AndroidGradle = "7.3.1"
-    const val Kotlin = "1.8.10"
+    const val Kotlin = "1.7.10"
     const val Hilt = "2.43.2"
     const val Navigation = "2.5.1"
-    const val Compose =  "1.3.1"
+    const val Compose = "1.3.1"
+    const val ComposeTooling = "1.3.3"
 }
 
 object Libs {
@@ -13,7 +14,13 @@ object Libs {
     object Compose {
         val Activity by lazy { "androidx.activity:activity-compose:${Versions.Compose}" }
         val Ui by lazy { "androidx.compose.ui:ui:${Versions.Compose}" }
+
+        object Tooling {
+            val Ui by lazy { "androidx.compose.ui:ui-tooling:${Versions.ComposeTooling}" }
+            val Preview by lazy { "androidx.compose.ui:ui-tooling-preview:${Versions.ComposeTooling}" }
+        }
     }
+
     val Material by lazy { "androidx.compose.material3:material3:1.0.1" }
 
     val Splash by lazy { "androidx.core:core-splashscreen:1.0.0" }
@@ -35,9 +42,9 @@ object Plugins {
 }
 
 object AndroidConfig {
-    const val CompileSdk = 32
+    const val CompileSdk = 33
     const val MinSdk = 26
-    const val TargetSdk = 32
+    const val TargetSdk = 33
     const val VersionCode = 1
     const val VersionName = "1.0.0"
     const val ApplicationId = "com.finny.app"
