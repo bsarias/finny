@@ -17,7 +17,7 @@ fun FinnyTheme(content: @Composable () -> Unit) {
     MaterialTheme(
         colorScheme = LightColorPalette,
         shapes = FinnyShapes.RegularShapes,
-        typography = FinnyTypography.TextTypography,
+        typography = FinnyTypography.PoppinsRegular,
         content = content
     )
 }

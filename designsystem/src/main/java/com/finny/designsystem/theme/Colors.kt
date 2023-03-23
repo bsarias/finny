@@ -9,5 +9,13 @@ object FinnyColors {
     val Secondary = Color(0xFF4CD080)
     val SecondaryDark = Color(0xFF105D38)
 
-    val White = Color.White
+    val White = Color(0xFFFFFFFF)
+
+    val TextPrimary = Color(0xFF030319)
+    val TextSecondary = Color(0xFF8F92A1)
+    val TextSuccess = Color(0xFF2ECC72)
+    val TextDanger = Color(0xFFFF3F3F)
+    val TextWarning = Color(0xFFFFD12E)
+    val TextInfo = Color(0xFF3498DB)
+    val TextLight get() = White
 }
