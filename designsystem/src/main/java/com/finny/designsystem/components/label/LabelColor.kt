@@ -7,10 +7,10 @@ sealed class LabelColor(
     val color: Color
 ) {
     object Primary : LabelColor(FinnyColors.TextPrimary)
-    object Secondary : LabelColor(FinnyColors.TextSecondary)
-    object Success : LabelColor(FinnyColors.TextSuccess)
-    object Danger : LabelColor(FinnyColors.TextDanger)
-    object Warning : LabelColor(FinnyColors.TextWarning)
-    object Info : LabelColor(FinnyColors.TextInfo)
-    object Light : LabelColor(FinnyColors.TextLight)
+    object Disabled : LabelColor(FinnyColors.onDisabled)
+    object Success : LabelColor(FinnyColors.Success)
+    object Danger : LabelColor(FinnyColors.Danger)
+    object Warning : LabelColor(FinnyColors.Warning)
+    object Info : LabelColor(FinnyColors.Info)
+    object Light : LabelColor(FinnyColors.Light)
 }

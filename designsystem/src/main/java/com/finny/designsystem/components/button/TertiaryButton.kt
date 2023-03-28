@@ -11,7 +11,7 @@ import com.finny.designsystem.theme.FinnyColors
 import com.finny.designsystem.theme.FinnyTheme
 
 @Composable
-fun PrimaryButton(
+fun TertiaryButton(
     text: String,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
@@ -19,7 +19,7 @@ fun PrimaryButton(
 ) {
     GenericButton(
         text = text,
-        type = ButtonType.Primary,
+        type = ButtonType.Tertiary,
         modifier = modifier,
         enabled = enabled,
         onClick = onClick
@@ -28,7 +28,7 @@ fun PrimaryButton(
 
 @Preview
 @Composable
-fun PreviewPrimaryButton() {
+fun PreviewTertiaryButton() {
     FinnyTheme {
         Column(
             modifier = Modifier
@@ -38,13 +38,13 @@ fun PreviewPrimaryButton() {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center,
         ) {
-            PrimaryButton(
+            TertiaryButton(
                 text = "Button example",
                 modifier = Modifier
                     .align(alignment = Alignment.CenterHorizontally)
                     .fillMaxWidth(),
             ) {}
-            PrimaryButton(
+            TertiaryButton(
                 text = "Button example",
                 modifier = Modifier
                     .align(alignment = Alignment.CenterHorizontally)

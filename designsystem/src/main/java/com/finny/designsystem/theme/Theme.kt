@@ -6,9 +6,11 @@ import androidx.compose.runtime.Composable
 
 private val LightColorPalette = lightColorScheme(
     primary = FinnyColors.Primary,
-    onPrimary = FinnyColors.PrimaryDark,
+    onPrimary = FinnyColors.onPrimary,
     secondary = FinnyColors.Secondary,
-    onSecondary = FinnyColors.SecondaryDark,
+    onSecondary = FinnyColors.onSecondary,
+    tertiary = FinnyColors.Tertiary,
+    onTertiary = FinnyColors.onTertiary,
     background = FinnyColors.White
 )
 
